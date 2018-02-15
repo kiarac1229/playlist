@@ -17,10 +17,10 @@
 
 // Songs
 var mySong = {
-	"title":"24K Magic",
-	"artist":"Bruno Mars",
-	"mp3-url":"https://open.spotify.com/track/6b8Be6ljOzmkOmFslEb23P",
-	"image-url":"https://images-na.ssl-images-amazon.com/images/I/71Gr9aCHQfL._SY355_.jpg",
+	"title":"Tu Futo",
+	"artist":"Ozuna",
+	"mp3-url":"https://open.spotify.com/track/0Szp49tpFasIjX04Mcsydp",
+	"image-url":"https://i0.wp.com/www.gotdembow.net/wp-content/uploads/2017/04/Ozuna-Tu-Foto-www.GotDembow.net_-e1493358429307.png?fit=600%2C600",
 }
 
 var myPlayList = [
