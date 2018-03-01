@@ -17,30 +17,35 @@
 
 // Songs
 var mySong = {
-	"title":"Tu Futo",
+	"title":"El Farsante",
 	"artist":"Ozuna",
-	"mp3-url":"https://open.spotify.com/track/0Szp49tpFasIjX04Mcsydp",
-	"image-url":"https://i0.wp.com/www.gotdembow.net/wp-content/uploads/2017/04/Ozuna-Tu-Foto-www.GotDembow.net_-e1493358429307.png?fit=600%2C600",
+	"mp3Url":"https://open.spotify.com/album/3SmlGJTItlYsSkcVbiQuVa",
+	"imageUrl":"https://i.ytimg.com/vi/6DRkf3kZMXw/maxresdefault.jpg",
 }
+
+/*var ozunaSong= mySong.title
+var ozunaArtist= mySong.artist
+var ozunaUrl= mySong.mp3url
+var ozunaImage= */
 
 var myPlayList = [
 	{
-		"title":"24K Magic",
-		"artist":"Bruno Mars",
-		"mp3-url":"https://open.spotify.com/track/6b8Be6ljOzmkOmFslEb23P",
-		"image-url":"https://images-na.ssl-images-amazon.com/images/I/71Gr9aCHQfL._SY355_.jpg",
+		"title":"Tu Futo",
+		"artist":"Ozuna",
+		"mp3Url":"https://open.spotify.com/track/0Szp49tpFasIjX04Mcsydp",
+		"imageUrl":"https://i0.wp.com/www.gotdembow.net/wp-content/uploads/2017/04/Ozuna-Tu-Foto-www.GotDembow.net_-e1493358429307.png?fit=600%2C600",
 	},
 	{
-		"title":"Sir Duke",
-		"artist":"Stevie Wonder",
-		"mp3-url":"https://open.spotify.com/track/2udw7RDkldLFIPG9WYdVtT",
-		"image-url":"https://upload.wikimedia.org/wikipedia/en/thumb/e/e2/Songs_in_the_key_of_life.jpg/220px-Songs_in_the_key_of_life.jpg",
+		"title":"Tell Me You Love Me",
+		"artist":"Demi Lovato",
+		"mp3Url":"https://open.spotify.com/album/2LGlGo4wHdPF2ZV1h0eX1A",
+		"imageUrl":"http://coverlandia.net/sites/default/files/styles/music_artwork_page/public/artworks/music/315101504647331.jpg?itok=A7_aIC7R",
 	},
 	{
-		"title":"Sorry",
-		"artist":"Justin Bieber",
-		"mp3-url":"https://open.spotify.com/track/09CtPGIpYB4BrO8qb1RGsF",
-		"image-url":"http://assets-s3.usmagazine.com/uploads/assets/articles/93827-justin-biebers-sorry-choreographer-spills-video-style-secrets-parris-goebel/1445638548_justin-bieber-sorry-dancers-zoom.jpg",
+		"title":"The Weekend",
+		"artist":"SZA",
+		"mp3Url":"https://open.spotify.com/track/6gU9OKjOE7ghfEd55oRO57",
+		"imageUrl":"https://i.ytimg.com/vi/PALMMqZLAQk/maxresdefault.jpg",
 	}
 
 ]
@@ -48,7 +53,12 @@ var myPlayList = [
 
 
 // DOCUMENT READY FUNCTION
+/*global $*/
 $( document ).ready(function() {
+	$('body').append("<h3> Title: " + mySong.title + "</h3>");
+	$('body').append("<h3> Artist: " + mySong.artist + "</h3>");
+	$('body').append("<a href=" + mySong.mp3Url + ">Play Here</a>");
+	$('body').append("<img src =" + mySong.imageUrl + ">");
   
 
 

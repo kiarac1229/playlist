@@ -1,1 +1,22 @@
+body {
+    background-color: #7fbfbf
+;
+    
+}
 
+h1 {
+    font-family: 'Kaushan Script', cursive;
+    text-align:center;
+}
+
+h3 {
+    font-family: 'Kaushan Script', cursive;
+    text-align:center;
+    
+}
+
+.resize{
+    width:540px; /* you can use % */
+    height: auto;
+    
+}
