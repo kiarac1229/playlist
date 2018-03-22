@@ -16,19 +16,15 @@
 //****************** SERIOUSLY TEST USING console.log()!!! ******************
 
 // Songs
-var mySong = {
-	"title":"El Farsante",
-	"artist":"Ozuna",
-	"mp3Url":"https://open.spotify.com/album/3SmlGJTItlYsSkcVbiQuVa",
-	"imageUrl":"https://i.ytimg.com/vi/6DRkf3kZMXw/maxresdefault.jpg",
-}
+// var mySong = {
+// 	"title":"El Farsante",
+// 	"artist":"Ozuna",
+// 	"mp3Url":"https://open.spotify.com/album/3SmlGJTItlYsSkcVbiQuVa",
+// 	"imageUrl":"https://i.ytimg.com/vi/6DRkf3kZMXw/maxresdefault.jpg",
+// }
 
-/*var ozunaSong= mySong.title
-var ozunaArtist= mySong.artist
-var ozunaUrl= mySong.mp3url
-var ozunaImage= */
 
-var myPlayList = [
+var myPlaylist = [
 	{
 		"title":"Tu Futo",
 		"artist":"Ozuna",
@@ -46,7 +42,13 @@ var myPlayList = [
 		"artist":"SZA",
 		"mp3Url":"https://open.spotify.com/track/6gU9OKjOE7ghfEd55oRO57",
 		"imageUrl":"https://i.ytimg.com/vi/PALMMqZLAQk/maxresdefault.jpg",
-	}
+	},
+	{
+	"title":"El Farsante",
+	"artist":"Ozuna",
+	"mp3Url":"https://open.spotify.com/album/3SmlGJTItlYsSkcVbiQuVa",
+	"imageUrl":"https://i.ytimg.com/vi/6DRkf3kZMXw/maxresdefault.jpg",
+}
 
 ]
 
@@ -55,30 +57,45 @@ var myPlayList = [
 // DOCUMENT READY FUNCTION
 /*global $*/
 $( document ).ready(function() {
-	$('body').append("<h3> Title: " + mySong.title + "</h3>");
-	$('body').append("<h3> Artist: " + mySong.artist + "</h3>");
-	$('body').append("<a href=" + mySong.mp3Url + ">Play Here</a>");
-	$('body').append("<img src =" + mySong.imageUrl + ">");
-  
-
-
+for(var i = 0; i < myPlaylist.length; i++){
+		displayList(myPlaylist[i]);	
+	}
+	
+	$("button").click(function() {
+		addSong();
+		clearList();
+		displayList(myPlaylist[i]);
+	});
 
 });
 
-function displayList(){
+function displayList(song){
+	$(".songs").append("<h3> Title: " + song.title + "</h3>");
+	$(".songs").append("<p> Artist: " + song.artist + "</p>");
+	$(".songs").append("<a href=" + song.mp3Url + ">Play Song</a>");
+	$(".songs").append("<img src =" + song.imageUrl + ">");
 
+  
 
   
 }
 
 function clearList(){
-  
+  $('.songs').empty();
   
   
 }
 
 function addSong(){
- 
+ var newSong = {
+		title: $("#title").val(),
+		artist: $("#artist").val(),
+		mp3Url: $("#mp3Url").val(),
+		imageUrl: $("#imageUrl").val()
+	}
+	myPlaylist.push(newSong);
+  
+
   
   
 }
